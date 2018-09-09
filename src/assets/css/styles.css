@@ -144,9 +144,53 @@ body {
 
 .social-img {
     width: 32px;
-    fill: #EFF8E2;
 }
 
-.Capa_1 path {
-    fill: #EFF8E2;
+.miniature {
+    width: 320px;
+    height: 213px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-color: #EFF8E2;
+    overflow: hidden;
+    
+}
+
+.miniature a {
+    text-decoration: none;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+    opacity: 0;
+}
+
+.blackbox:hover {
+    opacity: 0.9;
+}
+
+.blackbox-text {
+    text-align: center;
+    padding-top: 90px
+}
+
+.blackbox-text h1{
+    font-size: 16px;
+    color: yellowgreen;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.blackbox-text h2{
+    font-size: 12px;
+    color: #EFF8E2;
+    font-weight: 100;
+    margin: 0;
+
 }
