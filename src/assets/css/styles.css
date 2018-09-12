@@ -66,7 +66,6 @@ a {
 .profile_photo {
     width: 45%;
     text-align: center;
-    
 }
 
 .profile_photo img {
@@ -224,7 +223,22 @@ a {
     display: inline-block;
 }
 
-@media (max-width:1480px) {
+@media (max-width:1600px) {
+    .profile_photo img{
+        margin-left: 10px;
+       
+    }
+} 
+
+@media (max-width:1023px) {
+
+    header {
+        height: auto;
+    }
+
+    p, hr {
+        margin-right: 0px;
+    }
 
     .navigation li {
         display: none;
@@ -247,9 +261,11 @@ a {
     }
 
     .profile_photo {
-       width: 100%;
+        height: 220px;
+        width: 100%;
         padding: 0;
-        margin-top: 60px;
+        margin: 0;
+         margin-top: 60px;
     }
 
     .profile_photo img {
