@@ -17,8 +17,10 @@ const init = () => {
 
   meImg.addEventListener('mousemove', (e) => {
     console.log('mouseover');
+    /* eslint-disable */
     const posX = e.pageX / 1000 * 100 - 100;
     const posY = e.pageX / 1000 * 100 - 100;
+    /* eslint-enable */
     TweenMax.to(meImg, 2, {
       rotationX: 0.03 * posX,
       rotationY: -0.03 * posY,
