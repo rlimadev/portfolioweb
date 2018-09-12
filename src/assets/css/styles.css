@@ -33,6 +33,7 @@ body {
 .intro_text {
     color: yellowgreen;
     font-family: 'Dancing Script', cursive;
+   
 }
 
 .intro_text span {
@@ -193,4 +194,16 @@ body {
     font-weight: 100;
     margin: 0;
 
+}
+
+.photoworks {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.gamegif {
+    width:100%;
+    height:100%;
+    display: inline-block;
 }

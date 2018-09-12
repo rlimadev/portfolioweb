@@ -3,12 +3,13 @@ const webpack = require('webpack');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
+  devtool: 'source-map',
   entry: {
     app: './main.js',
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './example'),
+    path: path.resolve(__dirname, './dist'),
   },
   devServer: {
     contentBase: path.resolve(__dirname, './example'),
@@ -18,10 +19,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: [/node_modules/],
+        include: /src/,
         use: [{
           loader: 'babel-loader',
-        }]
-      }
-    ]
-  }
+        }],
+      },
+    ],
+  },
 };
