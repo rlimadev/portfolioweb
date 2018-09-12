@@ -7,6 +7,17 @@ html, body{
 body {
     background-color: #23022E;
     font-family: 'Varela Round', sans-serif;
+    visibility: hidden;
+}
+
+a {
+    color: #ADA8B6;
+    text-decoration: none;
+}
+
+.arrow {
+    color: yellowgreen;
+    font-size: 20px;
 }
 
 .navigation {

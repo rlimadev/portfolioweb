@@ -16,7 +16,7 @@
 			<div class="navigation">
 					<ul>
 							<li><a href="index.html">Home</a></li>
-							<li>Portfolio</li>
+							<li><span class="arrow">></span> Portfolio</li>
 							<li><a href="resume.html">Currículo</a></li>
 							<li><a href="contact.html">Contato</a></li>
 					</ul>
@@ -24,15 +24,15 @@
 						
 			<div class="main">
 				
-				<ul class="bread">
+				<ul class="bread" id="bread">
 					<li><a href="index.html">Home</a></li>
 					<li>></li>
 					<li>Portfólio</li>
 				</ul>
 
-				<h1>Portfólio</h1>
+				<h1 id="titleh1">Portfólio</h1>
 
-				<div style='background-image: url("./assets/img/br1mini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/br1mini.jpg")' class="miniature" id="m1">
 					<a href="brastempweb.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -43,7 +43,7 @@
 					</a>
 				</div>
 
-				<div style='background-image: url("./assets/img/bura2mini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/bura2mini.jpg")' class="miniature" id="m2">
 					<a href="buracoweb.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -54,7 +54,7 @@
 					</a>
 				</div>
 
-				<div style='background-image: url("./assets/img/nicefoto1mini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/nicefoto1mini.jpg")' class="miniature" id="m3">
 					<a href="photolivro.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -65,7 +65,7 @@
 					</a>
 				</div>
 
-				<div style='background-image: url("./assets/img/med1mini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/med1mini.jpg")' class="miniature" id="m4">
 					<a href="medsoft.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -76,7 +76,7 @@
 					</a>
 				</div>
 
-				<div style='background-image: url("./assets/img/lins2mini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/lins2mini.jpg")' class="miniature" id="m5">
 					<a href="microlins.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -87,7 +87,7 @@
 					</a>
 				</div>
 
-				<div style='background-image: url("./assets/img/swormini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/swormini.jpg")' class="miniature" id="m6">
 					<a href="swordunknow.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -98,7 +98,7 @@
 					</a>
 				</div>
 
-				<div style='background-image: url("./assets/img/belomini.jpg")' class="miniature">
+				<div style='background-image: url("./assets/img/belomini.jpg")' class="miniature" id="m7">
 					<a href="belote.html">
 						<div class="blackbox">
 							<div class="blackbox-text">
@@ -109,10 +109,11 @@
 					</a>
 				</div>
 
-				<p><a href="#">Voltar</a></p>
+				<p><a href="#" id="back">Voltar</a></p>
 
 			</div>	
 
 	</body>
-
+	<script src="/dist/bundle.js"></script>
 </html>
+
