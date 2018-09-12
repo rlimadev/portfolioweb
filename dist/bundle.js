@@ -7680,8 +7680,10 @@ var init = function init() {
 
   meImg.addEventListener('mousemove', function (e) {
     console.log('mouseover');
+    /* eslint-disable */
     var posX = e.pageX / 1000 * 100 - 100;
     var posY = e.pageX / 1000 * 100 - 100;
+    /* eslint-enable */
     _gsap.TweenMax.to(meImg, 2, {
       rotationX: 0.03 * posX,
       rotationY: -0.03 * posY,
@@ -8619,4 +8621,3 @@ module.exports = function(originalModule) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
