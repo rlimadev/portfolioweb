@@ -41,6 +41,10 @@ a {
     line-height: 50px;
 }
 
+.navigation li.icon {
+	display: none;
+}
+
 .intro_text {
     color: yellowgreen;
     font-family: 'Dancing Script', cursive;
@@ -108,6 +112,7 @@ a {
 
 .main p {
     text-align: left;
+    line-height: 36px;
 }
 
 .main h1 {
@@ -217,4 +222,124 @@ a {
     width:100%;
     height:100%;
     display: inline-block;
+}
+
+@media (max-width:1480px) {
+
+    .navigation li {
+        display: none;
+        height: 60px;
+    }
+
+    .navigation li.icon {
+        padding-top: 15px;
+        font-size: 36px;
+        display: inline-block;
+    }
+
+    .navigation li.icon:hover {
+       color: yellowgreen;
+       cursor: pointer;
+    }
+
+    .intro_text div {
+        height: auto;
+    }
+
+    .profile_photo {
+       width: 100%;
+        padding: 0;
+        margin-top: 60px;
+    }
+
+    .profile_photo img {
+        margin-top: 0;
+        max-width: 80%;
+        margin-left: 0;
+    }
+
+    .profile_description {
+        width: 100%;
+        padding-top: 0;
+        margin-top: 5;
+    }
+
+    .profile_description span{
+        font-size: 40px;
+        margin-top: -5px;
+    }
+
+    .profile_description h1{
+        text-align: center; 
+        font-size: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .profile_description h2 {
+        text-align: center;
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .main {
+        padding: 10px 5% 40px 5%; 
+        
+    }
+
+    .main p {
+        line-height: 40px;
+    }
+
+    .main hr{
+        margin-left: 0px;
+    }
+
+    .cv-pic {
+        max-width: 100%;
+        float: none;
+    }
+
+    .miniature {
+       
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        background-size: auto 100%;
+        background-color: #EFF8E2;
+        
+    }
+
+    .blackbox {
+        opacity: 0.9;
+    }
+
+    .photoworks img {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .mobilemenu {
+        height: auto;
+    }
+
+    .mobilemenu ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .mobilemenu li {
+        display: block;
+        border-bottom: solid grey 1px;
+        width: 100%;
+        padding: 0;
+    }
+
 }

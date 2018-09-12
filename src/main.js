@@ -41,7 +41,6 @@ TweenMax.from('.profile_description', 1.2, {
 TweenMax.from('.me', 1.2, {
   rotationX: -45,
   rotationY: 40,
-  clip: 'rect(0px 100px 100px 100px)',
   ease: Back.easeOut,
   opacity: 0,
   delay: 0.6,
@@ -137,7 +136,23 @@ const initContact = () => {
     opacity: 0,
     delay: 1.8,
   }, 0.1);
-
 };
 
 initContact();
+
+// mobile menu
+
+const nav = document.getElementById('navigation');
+
+const openMobileMenu = () => {
+  console.log('click');
+  if (nav.className === 'navigation') {
+    nav.className += ' mobilemenu';
+    document.getElementById('3line').innerHTML = '&Cross;';
+  } else {
+    nav.className = 'navigation';
+    document.getElementById('3line').innerHTML = '&#9776;';
+  }
+};
+
+nav.addEventListener('click', openMobileMenu);

@@ -7704,7 +7704,6 @@ _gsap.TweenMax.from('.profile_description', 1.2, {
 _gsap.TweenMax.from('.me', 1.2, {
   rotationX: -45,
   rotationY: 40,
-  clip: 'rect(0px 100px 100px 100px)',
   ease: _gsap.Back.easeOut,
   opacity: 0,
   delay: 0.6,
@@ -7813,6 +7812,23 @@ var initContact = function initContact() {
 };
 
 initContact();
+
+// mobile menu
+
+var nav = document.getElementById('navigation');
+
+var openMobileMenu = function openMobileMenu() {
+  console.log('click');
+  if (nav.className === 'navigation') {
+    nav.className += ' mobilemenu';
+    document.getElementById('3line').innerHTML = '&Cross;';
+  } else {
+    nav.className = 'navigation';
+    document.getElementById('3line').innerHTML = '&#9776;';
+  }
+};
+
+nav.addEventListener('click', openMobileMenu);
 
 /***/ }),
 /* 11 */
