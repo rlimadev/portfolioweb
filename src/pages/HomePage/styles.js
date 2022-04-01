@@ -15,9 +15,15 @@ export const Section = styled.div`
     width: 42%;
   }
   ${media.between("medium", "large")`
-  img {
-    width: 41%;
-  }
+    img {
+      width: 35%;
+    }
+  `}
+  ${media.greaterThan("large")`
+    img {
+      padding: 0 0 1rem 0;
+      width: 35%;
+    }
   `}
 `;
 
@@ -45,11 +51,15 @@ export const Title = styled.h1`
     font-weight: 700;
   }
   `}
+  ${media.greaterThan("968px")`
+    display: none;
+  `}
 `;
 
 export const Span = styled.span`
   font-size: .5rem;
-  ${media.between("medium", "large")`
-    font-size: 1rem;
+
+  ${media.greaterThan("medium")`
+    display: none;
   `}
 `

@@ -13,6 +13,9 @@ export const List = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
+  ${media.greaterThan("large")`
+  width: 70%;
+  `}
 `;
 
 export const ListItem = styled.div`
@@ -36,17 +39,17 @@ export const ListItem = styled.div`
   }
   ${media.between("medium", "large")`
     padding: 1rem 1.2rem;
-    font-size: small;
-    svg {
     font-size: large;
-    }
-  ${media.greaterThan("large")`
-    padding: 3rem 1.2rem;
-    font-size: small;
     svg {
-    font-size: large;
+    font-size: x-large;
     }
   `}
+  ${media.greaterThan("large")`
+    padding: 1.2rem 1.2rem;
+    font-size: x-large;
+    svg {
+    font-size: xx-large;
+    }
   `}
 `;
 
@@ -61,5 +64,12 @@ export const Button = styled.button`
   }
   ${media.between("medium", "large")`
     padding: 1rem 1.2rem;
+  `}
+  ${media.greaterThan("large")`
+  padding: 2.5rem 6rem;
+  margin: 0 0 2rem 0;
+  svg {
+    font-size: 6rem;
+  }
   `}
 `;
