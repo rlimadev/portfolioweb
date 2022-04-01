@@ -1,0 +1,31 @@
+.bgeff {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-190deg, #23022E 50%, #2d0f50 50%);
+    bottom:-80%;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
