@@ -1,14 +1,21 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Curriculum from "./components/Curriculum";
+import Portfolio from "./components/Portfolio/Portfolio";
 
-import HomePage from './pages/HomePage'
-import Global from './style/global';
+import HomePage from "./pages/HomePage";
+import Global from "./style/global";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Global />
-      <HomePage />
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/curriculum" element={<Curriculum />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
