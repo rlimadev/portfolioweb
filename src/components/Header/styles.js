@@ -27,6 +27,7 @@ export const ListItem = styled.div`
   border-bottom: 1px solid #ada8b6;
   padding: 0.5rem 0;
   font-size: x-small;
+  cursor: pointer;
   span {
     color: yellowgreen;
     padding: 0 0.2rem 0 0;
