@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -42,17 +42,15 @@ export const Text = styled.div`
 export const Link = styled.a`
   width: 60%;
   button {
-    width: ;
     background: none;
     border: none;
     color: #ada8b6;
     margin: 2rem 0 10rem;
     font-size: 2.3rem;
-    letter-spacing: 0.04rem
+    letter-spacing: 0.04rem;
   }
 `;
 
 export const Iframe = styled.iframe`
   width: 60%;
 `;
-
