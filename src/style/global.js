@@ -23,7 +23,6 @@ export default createGlobalStyle`
   body {
     background-color: #23022E;
     font-family: 'Varela Round', sans-serif;
-    //visibility: hidden;
     color: #ada8b6;
   }
 
