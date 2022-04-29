@@ -1,7 +1,7 @@
 import React from "react";
 
-import Crumb from "../../Crumb";
 import Header from "../../Header";
+import Crumb from "../../Crumb";
 import Belo1 from "../../../assets/img/belo1.jpg";
 import Belo2 from "../../../assets/img/belo2.jpg";
 
