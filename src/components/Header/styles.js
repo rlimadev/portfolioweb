@@ -63,6 +63,10 @@ export const Button = styled.button`
   svg {
     font-size: 2rem;
   }
+  ${media.greaterThan("medium")`
+    display: none;
+    padding: 1rem 1.2rem;
+  `}
   ${media.between("medium", "large")`
     padding: 1rem 1.2rem;
   `}
@@ -73,4 +77,20 @@ export const Button = styled.button`
     font-size: 6rem;
   }
   `}
+`;
+
+export const MenuList = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 28.5%;
+  margin: 1.45rem 0 6.5rem 0;
+`;
+
+export const MenuListItem = styled.div`
+  font-size: 1.65rem;
+  cursor: pointer;
+  span {
+    color: yellowgreen;
+    padding: 0 0.2rem 0 0;
+  }
 `;
