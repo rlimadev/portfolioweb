@@ -1,3 +1,3 @@
-import Crumb from './Crumb'
+import Crumb from "./Crumb";
 
 export default Crumb;
