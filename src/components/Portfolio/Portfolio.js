@@ -1,27 +1,37 @@
 import React from "react";
-import { Container, List, ListItem, Title, Nav, Content } from "./styles";
+import { useNavigate } from "react-router-dom";
 
+import Crumb from "../Crumb/Crumb";
 import Header from "../Header";
 import { projects } from "./mock";
-import Crumb from "../Crumb/Crumb";
+
+import {
+  Container,
+  Section,
+  List,
+  ListItem,
+  Title,
+  Nav,
+  Content,
+} from "./styles";
 
 const Portfolio = ({ id = "Portfólio" }) => {
-  return (
-    <>
-      <Header />
+  const navigate = useNavigate();
 
-      <Container>
+  return (
+    <Container>
+      <Header />
+      <Section>
         <Nav>
           <Crumb page={id} />
         </Nav>
         <Title>Portfólio</Title>
         <List>
-          {projects.map((item) => (
-            <Content>
+          {projects.map((item, key) => (
+            <Content onClick={() => navigate(`${item.url}`)}>
               <ListItem
-                style={{
-                  backgroundImage: ` url(${item.image})`,
-                }}
+                key={item.name}
+                style={{ backgroundImage: `url(${item.image})` }}
               >
                 <div>
                   <h2>{item.title}</h2>
@@ -31,8 +41,8 @@ const Portfolio = ({ id = "Portfólio" }) => {
             </Content>
           ))}
         </List>
-      </Container>
-    </>
+      </Section>
+    </Container>
   );
 };
 
