@@ -1,14 +1,22 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import { Container } from './styles'
+import { Container, Btn } from "./styles";
 
-const Crumb = ({page}) => {
+const Crumb = ({ page, project, link }) => {
+  const navigate = useNavigate();
+
   return (
     <Container>
-      Home {'>'} {page}
+      Home &#62;{" "}
+      {project === undefined ? (
+        page
+      ) : (
+        <Btn onClick={() => navigate(`/${link}`)}>{page}</Btn>
+      )}
+      {project !== undefined && `> ${project}`}
     </Container>
-  )
-}
+  );
+};
 
-export default Crumb
-
+export default Crumb;
