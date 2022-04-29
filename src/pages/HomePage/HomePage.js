@@ -1,7 +1,9 @@
 import React from "react";
+
 import Header from "../../components/Header";
 import Me from "../../assets/img/me.jpg";
-import { Container, Section, Title, Span } from "./styles";
+
+import { Container, Section, Title, Span, Aside } from "./styles";
 
 const HomePage = () => {
   return (
@@ -9,14 +11,14 @@ const HomePage = () => {
       <Header />
       <Section>
         <img src={Me} alt="Profile" />
-        <div>
+        <Aside>
           <Title>
             Rafael<span> Lima da Rocha</span>
           </Title>
           <Span>
             Fullstack Developer - Sênior Web, Mobile e Desktop Game Developer
           </Span>
-        </div>
+        </Aside>
       </Section>
     </Container>
   );
